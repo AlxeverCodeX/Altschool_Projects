@@ -3,7 +3,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.orm import declarative_base
 from datetime import datetime
 
-engine = create_engine("sqlite://tasks.db", echo=True)
+engine = create_engine("sqlite:///tasks.db", echo=True)
 
 session = scoped_session(sessionmaker(bind=engine))
 
